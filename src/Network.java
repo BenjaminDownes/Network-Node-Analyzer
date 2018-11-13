@@ -627,7 +627,7 @@ public class Network {
     	//System.out.println("Start node: " + start.get_name()+ "[" + start + "]\n");
     	for(HashMap.Entry<String, Node> pair: nodeMap.entrySet()) {
     		Node node = pair.getValue();
-    		String output = "•"; //Create output string
+    		String output = "Â•"; //Create output string
     		output += node.get_name(); //Add name
     		output += "(" + node.get_duration() + "): ";
     		//Print Child Nodes:
@@ -648,7 +648,7 @@ public class Network {
     	ArrayList<Path> tmpPathList = get_paths();
     	for(int i = 0; i<tmpPathList.size();i++) {
     		Path path = tmpPathList.get(i); //Get current path object
-    		String output = "•"; //Create output string
+    		String output = "Â•"; //Create output string
     		output += "Path" + i + "(" + path.get_duration() + "):";
     		for(int j = 0;j<path.path.size();j++) {// Loop through each node in path
     			output += path.path.get(j).get_name();
@@ -688,7 +688,7 @@ public class Network {
     	//System.out.println("Start node: " + start.get_name()+ "[" + start + "]\n");
     	for(HashMap.Entry<String, Node> pair: nodeMap.entrySet()) {
     		Node node = pair.getValue();
-    		String output = "•"; //Create output string
+    		String output = "Â•"; //Create output string
     		output += node.get_name(); //Add name
     		output += "(" + node.get_duration() + "): ";
     		//Print Child Nodes:
@@ -710,7 +710,7 @@ public class Network {
     	ArrayList<Path> tmpPathList = get_paths();
     	for(int i = 0; i<tmpPathList.size();i++) {
     		Path path = tmpPathList.get(i); //Get current path object
-    		String output = "•"; //Create output string
+    		String output = "Â•"; //Create output string
     		output += "Path" + i + "(" + path.get_duration() + "):";
     		for(int j = 0;j<path.path.size();j++) {// Loop through each node in path
     			output += path.path.get(j).get_name();
